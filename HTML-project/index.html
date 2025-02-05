@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML project</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label for="fname">First Name: 
+                <input type="text" id="fname">
+            </label>
+            <br>
+            <br>
+            <label for="lname">Last Name:
+                <input type="text" id="lname">
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action="">
+            <label for="one">
+                <input type="radio" name="selectone" id="one">One
+            </label><br>
+            <label for="two">
+                <input type="radio" name="selectone" id="two">Two
+            </label>
+            <br>
+            <label for="three">
+                <input type="radio" name="selectone" id="three">Three
+            </label>
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action="">
+            <label for="js">
+                <input type="checkbox" id="js">JS
+            </label><br>
+            <label for="css">
+                <input type="checkbox" id="css">Css
+            </label><br>
+            <label for="html">
+                <input type="checkbox" id="html">HTML
+            </label>
+        </form>
+    </div>
+    <br>
+    <div>
+      <fieldset>
+        <legend>Form Submission</legend>
+        <label for="cars">Choose One: 
+            <select name="cars" id="cars">
+                <option value="BYD">BYD</option>
+                <option value="TESLA">TESLA</option>
+
+                <option value="TOYOTA">TOYOTA</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="personal-info">Personal Information: <br>
+            <textarea name="personal-info" id="personal-info" cols="50" rows="10" placeholder="Enter Message:"></textarea>
+        </label>
+        <br>
+        <br>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <legend>Secon Form:</legend>
+        <form action="">
+            <label for="name">Name:
+                <input type="text" id="name" placeholder="Enter your name" required  autofocus>
+            </label>
+            <br>
+            <br>
+            <label for="Date">Select Date:
+                <input type="date" id="Date">
+            </label><br><br>
+            <label for="time">Time:
+                <input type="time" id="time">
+            </label><br><br>
+            <label for="range">Select: 
+                <input type="range" id="range">
+            </label>
+            <br><br>
+            <label for="file">file
+                <input type="file" id="file" multiple>
+            </label>
+            <br>
+            <br>
+            <label for="color">Color:
+                <input type="color" id="color">
+            </label>
+            <br>
+            <br>
+            <label for="email">email
+                <input type="email" id="email" required autofocus>
+            </label>
+            <br><br>
+            <label for="number">Age
+                <input type="number" id="number" min="18" max="100" step="20">
+            </label>
+        <br>
+        <br>
+        </form>
+        <label for="url">url
+            <input type="url" id="url" autocomplete="on">
+        </label>
+        <br><br>
+        <input type="submit" value="Submit One">
+        <input type="reset" value="Reset One">
+    </fieldset>
+    </div>
+</body>
+</html>
