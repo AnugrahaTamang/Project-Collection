@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: 60px auto 50px;
+            grid-template-columns: 250px auto;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 100vh;
+            gap: 10px;
+            background: #eef1f6;
+        }
+        header {
+            grid-area: header;
+            background: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        aside {
+            grid-area: sidebar;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        main {
+            grid-area: main;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .course {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        footer {
+            grid-area: footer;
+            background: #343a40;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Learning</h1>
+    </header>
+    <aside>
+        <h3>Categories</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Science</li>
+            <li>Machine Learning</li>
+            <li>Cybersecurity</li>
+            <li>Artificial Intelligence</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </aside>
+    <main>
+        <div class="course">HTML & CSS Basics</div>
+        <div class="course">JavaScript Fundamentals</div>
+        <div class="course">React for Beginners</div>
+        <div class="course">Python Programming</div>
+        <div class="course">Django Framework</div>
+        <div class="course">Node.js Essentials</div>
+    </main>
+    <footer>
+        <p>&copy; 2025 E-Learning Platform</p>
+    </footer>
+</body>
+</html>
