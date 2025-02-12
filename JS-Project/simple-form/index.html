@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }
+        form{
+            height: 200px;
+            width: 300px;
+            border: 2px solid gold;
+            padding: 20px;
+            margin: 25px auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form>
+       <label for="name">Name:
+        <input type="text" name="name" id="name">
+       </label>
+       <br>
+       <br>
+       <label for="email">Email:
+        <input type="email" name="email" id="email">
+       </label>
+       <br><br>
+       <label for="country">Country:
+        <select name="country" id="country">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+        </select>
+       </label>
+       <br><br>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
